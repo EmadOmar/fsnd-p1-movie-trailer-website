@@ -1,0 +1,28 @@
+<div class="movie col-sm-4 col-md-3" data-title="{title}" data-year="{year}"
+     data-director="{director}" data-length="{length}" data-genre="{genre}"
+     data-excerpt="{excerpt}"
+     data-cast="{cast}"
+     data-youtube_trailer="{youtube_trailer}" data-rate="{rate}">
+
+  <div class="movie-wrapper">
+    <div class="poster-wrapper">
+      <img alt="{title} poster" class="movie-poster"
+           src="{poster_url}">
+      <a class="poster-source" href="{poster_source}"
+         target="_blank" rel="nofollow" title="Poster source">
+        <i class="fa fa-info-circle"></i><span class="sr-only">(Poster image source)</span>
+      </a>
+    </div>
+
+    <h2 class="movie-name">{title} ({year})</h2>
+
+    <div class="movie-info">
+      <span class="movie-director"><span class="sr-only">Director: </span>{director}</span><br>
+      <span class="movie-genre"><span class="sr-only">Genre: </span>{genre}</span><br>
+              <span class="movie-rate">
+                {rendered_rate}
+                <span class="sr-only">Rate: {rate}/5</span>
+              </span>
+    </div>
+  </div>
+</div>

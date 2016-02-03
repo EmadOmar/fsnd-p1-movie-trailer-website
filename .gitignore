@@ -1,0 +1,5 @@
+# The vendor director is used only to help with auto completion
+vendor
+
+# Python compiled files
+*.pyc

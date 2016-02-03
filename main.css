@@ -1,0 +1,133 @@
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
+
+/* Header */
+.site-icon {
+  color: #f33;
+}
+
+/* Body / Content section */
+.content-wrapper {
+  padding: 20px 40px;
+}
+
+.movie {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  padding: 15px;
+  text-align: center;
+}
+
+/* The following two media styles are a work around to resolve
+ the vertical gaping issue between rows and col */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .movie {
+    height: 450px;
+  }
+}
+
+@media (min-width: 992px) {
+  .movie {
+    height: 450px;
+  }
+}
+
+.movie-wrapper {
+  margin: auto;
+  transition: ease-in-out .2s;
+  width: 70%;
+}
+
+.movie:hover {
+  background: #f3f2f2;
+  cursor: pointer;
+}
+
+.poster-wrapper {
+  position: relative;
+}
+
+.movie-poster {
+  width: 100%;
+}
+
+.poster-source {
+  bottom: 10px;
+  position: absolute;
+  right: 10px;
+}
+
+.movie-name {
+  font-size: 20px;
+}
+
+.movie-info {
+  text-align: left;
+}
+
+.movie-info span {
+  display: inline-block;
+  padding: 2px 0;
+}
+
+.movie-director {
+  color: #666;
+}
+
+.movie-genre {
+  color: #aaa;
+}
+
+.movie-rate .fa-star,
+.movie-rate .fa-star-half-full {
+  color: #0ac;
+}
+
+/* Footer */
+#app-footer {
+  background: #f5f5f5;
+  color: #777;
+  padding: 15px 0;
+}
+
+/* Movie dialog */
+
+/**
+ * `.video-wrapper` (@see http://stackoverflow.com/a/15844571/4112200)
+ * to make the embedded youtube video responsive
+ */
+.video-wrapper {
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  padding-top: 25px;
+  position: relative;
+  width: 100%;
+}
+
+.video-wrapper iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.movie-dialog-info [class*='col-'] {
+  margin-bottom: 7px;
+  margin-top: 7px;
+}
+
+.cast [class*='col-'] {
+  margin-bottom: 7px;
+  margin-top: 7px;
+}
+
+.cast .fa-star {
+  color: #fd3;
+}
+
+.cast [class*='col-'] {
+  margin-bottom: 7px;
+  margin-top: 7px;
+}

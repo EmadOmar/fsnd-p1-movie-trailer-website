@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>My Favorite Movies</title>
+<link rel="stylesheet" href="main.css">
+<header class="navbar navbar-default navbar-static-top">
+  <div class="container">
+    <a class="navbar-brand" href="javascript:void(0)">
+      <i class="site-icon fa fa-heart"></i><span class="sr-only">(Red heart)</span>
+      <span>My Favorite Movies</span>
+    </a>
+  </div>
+</header>
+
+<section class="content-wrapper">
+  <div class="container">
+    <div class="movies row">
+      {movies}
+    </div>
+  </div>
+</section>
+
+<footer id="app-footer">
+  <div class="container">
+    <span class="pull-left">By <a href="javascript:void(0)">Emad Omar</a></span>
+    <span class="pull-right">© 2016 All copyrights reserved</span>
+  </div>
+</footer>
+
+<script id="movie-dialog-template" type="x-tmpl-mustache">
+  <div class="video-wrapper">
+    <iframe width="560" height="315" src="{{youtube_trailer}}" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <hr>
+  <div class="movie-dialog-info row">
+    <div class="col-sm-4 col-xs-6">
+      <strong>Title: </strong><br>
+      <span>{{title}}</span>
+    </div>
+    <div class="col-sm-4 col-xs-6">
+      <strong>Year: </strong><br>
+      <span>{{year}}</span>
+    </div>
+    <div class="col-sm-4 col-xs-6">
+      <strong>Genre: </strong><br>
+      <span>{{genre}}</span>
+    </div>
+    <div class="col-sm-4 col-xs-6">
+      <strong>Director: </strong><br>
+      <span>{{director}}</span>
+    </div>
+    <div class="col-sm-4 col-xs-6">
+      <strong>Length / Duration: </strong><br>
+      <span>{{length}} mins.</span>
+    </div>
+    <div class="movie-rate col-sm-4 col-xs-6">
+      <strong>Rate: </strong><br>
+      <span>{{{rate}}}</span>
+    </div>
+  </div>
+  <hr>
+  <p class="movie-excerpt">{{excerpt}}</p>
+  <hr>
+  <div class="cast">
+    <h3>Cast</h3>
+    <div class="row">
+      {{{cast}}}
+    </div>
+  </div>
+</script>
+<script src="main.js"></script>
